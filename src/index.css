@@ -1,13 +1,196 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  background-color: #c5e4e7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 170px;
+}
+
+.caculator-box {
+  background-color: #fff;
+  border-radius: 20px;
+  width: 1000px;
+  height: 450px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 35px;
+}
+
+.bill-box {
+  margin-bottom: 30px;
+}
+
+.label-bill {
+  color: #00474b;
+  font-family: "Tahoma";
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.label-input {
+  width: 90%;
+  background-color: #f3f8fb;
+  border: none;
+  padding: 17px;
+
+  border-radius: 9px;
+  font-size: 16px;
+  color: #00474b;
+}
+
+.label-tip {
+  color: #00474b;
+  font-family: "Tahoma";
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+.tip-flex-box-one {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin-bottom: 10px;
+}
+
+.tip-flex-box-two {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin-bottom: 40px;
+}
+
+.tip-input-button {
+  background-color: #f3f8fb;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #00474b;
+
+  padding: 10px 20px;
+  width: 25%;
+}
+
+.tip-button {
+  background-color: #00474b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  padding: 10px 40px;
+  font-size: 17px;
+  font-family: "Tahoma";
+}
+
+.tip-button:hover {
+  background-color: #9fe8df;
+}
+
+.label-number-people {
+  color: #00474b;
+  font-family: "Tahoma";
+  font-size: 16px;
+  margin-bottom: 17px;
+}
+
+.label-number-people-input {
+  width: 90%;
+  background-color: #f3f8fb;
+  border: none;
+  padding: 17px;
+
+  border-radius: 9px;
+  font-size: 16px;
+  color: #00474b;
+}
+
+.caculator-box-one {
+  padding: 10px;
+}
+
+.caculator-box-two {
+  background-color: #00474b;
+  border-radius: 15px;
+  padding: 10px;
+  padding: 25px;
+}
+
+.tip-amount-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.tip-amount-label {
+  color: #fff;
+  font-family: "Tahoma";
+  font-size: 16px;
+}
+
+.tip-amount-tag {
+  color: #aaa;
+  font-size: 14px;
+}
+
+.tip-amount-sum {
+  color: #28c4ae;
+  font-size: 34px;
+  font-weight: bold;
+}
+
+.total-amount-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 120px;
+}
+
+.total-amount-label {
+  color: #fff;
+  font-family: "Tahoma";
+  font-size: 16px;
+}
+
+.total-amount-tag {
+  color: #aaa;
+  font-size: 14px;
+}
+
+.total-amount-sum {
+  color: #28c4ae;
+  font-size: 34px;
+  font-weight: bold;
+}
+
+.reset-button {
+  background-color: #0d686d;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  padding: 10px 150px;
+  font-size: 17px;
+  font-family: "Tahoma";
+
+  margin-left: 35px;
+}
+
+.reset-button:hover {
+  background-color: #9fe8df;
 }
